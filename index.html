@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TaskFlow Login/Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="login-box">
+    <h2>Login</h2>
+    <input type="email" id="login-email" placeholder="Email" />
+    <input type="password" id="login-password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p>Don’t have an account? <a href="#" onclick="toggleBox()">Register</a></p>
+  </div>
+
+  <div class="container" id="register-box" style="display: none;">
+    <h2>Register</h2>
+    <input type="text" id="name" placeholder="Name" />
+    <input type="email" id="reg-email" placeholder="Email" />
+    <input type="password" id="reg-password" placeholder="Password" />
+    <button onclick="register()">Register</button>
+    <p>Already have an account? <a href="#" onclick="toggleBox()">Login</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
